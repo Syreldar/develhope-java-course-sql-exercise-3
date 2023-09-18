@@ -14,7 +14,7 @@ public class Main
 
         try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/newdb", "developer", "developer");
              Statement statement = connection.createStatement();
-             ResultSet resultSet = statement.executeQuery("SELECT last_name, first_name FROM students"))
+             ResultSet resultSet = statement.executeQuery("SELECT last_name, first_name FROM students;"))
         {
             while (resultSet.next())
             {
